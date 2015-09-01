@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>(Un)Periodic Table</title>
+    <meta charset="utf-8">
+    <script src="lib/d3.v3.js"></script>
+    <script src="lib/queue.v1.min.js"></script>
+    <script src="lib/underscore.js"></script>
+    <style>
+      .label {
+        font-family: Verdana, Geneva, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="plot.js"></script>
+    <div class="label"><strong>LAYOUT</strong></div>
+    <form id="layout-options">
+      <input type="radio" name="layout" value="periodic" checked>Periodic Table
+      <input type="radio" name="layout" value="cmd">CMDS
+      <input type="radio" name="layout" value="tsne">TSNE
+    </form> 
+    <div class="label"><strong>COLORING</strong></div>
+    <form id="color-options">
+      <input type="radio" name="color" value="group" checked>Color by groups
+      <input type="radio" name="color" value="metal">Color by metallicity
+      <input type="radio" name="color" value="none">None
+    </form> 
+    <div class="label"><strong>EDGES</strong></div>
+    <form id="link-options">
+      <input type="radio" name="link" value="on" checked>Show groups
+      <input type="radio" name="link" value="off">Hide groups
+    </form> 
+  </body>
+</html>
